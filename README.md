@@ -26,8 +26,9 @@
 ###################################
 #### Run docker image           ###
 ###################################
-
-build the docker image using Dockerfile located at root of the source dir
-* docker build -t image-name:version .
-* docker run -p 8080:8080 image-name:version
-* Access webpage by http://localhost:8080
+1. successful execution of pipeline craetes image 'pet-clinician-spring-boot-image', it can be use run the application
+   * docker run -p 8080:8080 pet-clinician-spring-boot-image
+2. build the docker image using Dockerfile located at root of the source dir
+   * docker build -t image-name:version .
+   * docker run -p 8080:8080 image-name:version
+   * Access webpage by http://localhost:8080
